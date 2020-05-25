@@ -105,11 +105,21 @@
       margin: 0;
       padding: 0;
       display: grid;
-      grid-auto-flow: column;
-      grid-auto-columns: auto;
-      justify-content: start;
       grid-gap: 1rem;
       list-style: none;
+    }
+
+    @media (min-width: 60em) {
+      .nav-links {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: auto;
+        justify-content: start;
+      }
+
+      .contact-menu {
+        display: none;
+      }
     }
 
     .sidebar {
@@ -187,6 +197,7 @@
             <li><a href="#hair">Hair Services</a></li>
             <li><a href="#nail">Nail Services</a></li>
             <li><a href="#spa">Spa Services</a></li>
+            <li class="contact-menu"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -445,7 +456,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10757.864521188498!2d-122.1982158!3d47.6170697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7e7579d043025eb!2sBen&#39;s%20Hair%20%26%20Nails!5e0!3m2!1sen!2sus!4v1590378005100!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </div>
-    <aside class="sidebar">
+    <aside id="contact" class="sidebar">
       <div>
         <h5 class="heading-5">Make an Appointment</h5>
         <p>Give us a call to make an appointment or ask any questions you have.</p>
