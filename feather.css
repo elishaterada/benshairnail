@@ -9,6 +9,7 @@
  * Variables
  */
 :root {
+  --accent-font-family: 'Felipa',-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
   --font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
   --transition-speed: 0.15s;
   --disabled-opacity: 0.75;
@@ -131,6 +132,7 @@ hr {
  * Typography
  */
 .heading-1 {
+  font-family: var(--accent-font-family);
   margin: 0 0 1rem;
   line-height: 1.6;
   font-size: 2.5rem;
@@ -145,6 +147,7 @@ hr {
 }
 
 .heading-2 {
+  font-family: var(--accent-font-family);
   margin: 0 0 1rem;
   line-height: 1.6;
   font-size: 2.25rem;
@@ -170,14 +173,14 @@ hr {
   line-height: 1.6;
   font-size: 1.25rem;
   font-weight: 400;
-  color: var(--color-gray-2)
+  color: var(--color-gray-1)
 }
 .heading-6 {
   margin: 0 0 1rem;
   line-height: 1.6;
   font-size: 1rem;
   font-weight: 400;
-  color: var(--color-gray-2)
+  color: var(--color-gray-1)
 }
 p {
   margin: 0 0 1rem;
